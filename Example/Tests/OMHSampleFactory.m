@@ -169,11 +169,12 @@
                  HKQuantityTypeIdentifierRespiratoryRate,
                  HKQuantityTypeIdentifierBodyTemperature,
                  HKQuantityTypeIdentifierBasalBodyTemperature,
-                 HKQuantityTypeIdentifierBloodAlcoholContent
+                 HKQuantityTypeIdentifierBloodAlcoholContent,
+                 HKQuantityTypeIdentifierWaistCircumference
                  ] includes:sampleTypeIdentifier]) {
         
         NSString* defaultUnitString = nil;
-        if (sampleTypeIdentifier == HKQuantityTypeIdentifierHeight) {
+        if (sampleTypeIdentifier == HKQuantityTypeIdentifierHeight || sampleTypeIdentifier == HKQuantityTypeIdentifierWaistCircumference) {
             defaultUnitString = @"cm";
         } else if (sampleTypeIdentifier == HKQuantityTypeIdentifierBodyMass) {
             defaultUnitString = @"lb";

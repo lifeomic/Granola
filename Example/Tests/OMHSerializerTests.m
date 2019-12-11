@@ -32,6 +32,7 @@ void (^logTypeSupportTableString)() = ^{
                                    HKQuantityTypeIdentifierHeight,
                                    HKQuantityTypeIdentifierBodyMass,
                                    HKQuantityTypeIdentifierLeanBodyMass,
+                                   HKQuantityTypeIdentifierWaistCircumference,
                                    ],
                            @"Fitness Identifiers": @[
                                    HKCategoryTypeIdentifierAppleStandHour,
